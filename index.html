@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm p-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="images/logo.png" alt="MediCart Logo" style="height: 75px;">
+            </a>            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <a href="cart.html" class="btn btn-light position-relative">
+                    🛒 Cart <span id="cart-count" class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="search-container">
+                    <input type="text" id="search" class="form-control search-box" placeholder="🔍 Search for medicines...">
+                </div>
+            </div>
+        </div>
+        <div id="medicine-list" class="row"></div>
+    </div>
+
+    <!-- Notification Message -->
+    <div id="cart-notification" class="alert alert-success text-center position-fixed start-50 translate-middle-x d-none">
+        ✅ Item added to cart!
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About MediCart</h5>
+                    <p>Your trusted online pharmacy for all medical needs.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">🏠 Home</a></li>
+                        <li><a href="cart.html">🛒 Cart</a></li>
+                        <li><a href="#">📞 Contact</a></li>
+                        <li><a href="#">🔒 Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: support@medicart.com</p>
+                    <p>Phone: +91 9876543210</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>© 2025 MediCart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/medicines.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
