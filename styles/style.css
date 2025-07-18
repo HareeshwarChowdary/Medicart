@@ -1,0 +1,91 @@
+/* Medicine Card Styling */
+.medicine-img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Cart Image */
+.cart-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Cart Item Styling */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.search-container {
+    position: relative;
+    padding: 20px 0; /* Adds space above and below */
+}
+
+.search-box {
+    padding: 14px 20px; /* Increase padding inside input */
+    font-size: 18px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Notification Styling */
+#cart-notification {
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 300px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.footer h5 {
+    font-weight: bold;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
